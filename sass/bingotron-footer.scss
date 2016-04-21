@@ -1,0 +1,139 @@
+
+// #bingotron-footer -----------------------------------------------------------
+	#bingotron-footer{
+		div,ul,li,img,p,h1,span{
+			// border:1px dashed red;
+		}
+		background-image:url("../img/bg-footer.png");
+		position:fixed;
+		bottom:0;
+		width:100%;
+		min-width:1100px;
+		.container{
+			.wrapper{
+				max-width:1100px;
+				.footer-left{
+					display:none;
+					float:left;
+					width:340px;
+					margin-top:31px;
+					height:62px;
+
+					#user-id{
+						background: -moz-linear-gradient(90deg, #04407b 0%, #117ac5 60%, #19a0f6 100%);
+						background: -ms-linear-gradient(90deg, #04407b 0%, #117ac5 60%, #19a0f6 100%);
+						background: -o-linear-gradient(90deg, #04407b 0%, #117ac5 60%, #19a0f6 100%);
+						background: -webkit-linear-gradient(90deg, #04407b 0%, #117ac5 60%, #19a0f6 100%);
+						background: linear-gradient(0deg, #04407b 0%, #117ac5 60%, #19a0f6 100%);
+						border-radius: 6px;
+						box-shadow:0px 0px 4px 4px rgba(0,0,0,.7);
+						display:inline-block;
+						height: 52px;
+						margin-right:11px;
+						vertical-align: middle;
+						width: 175px;
+
+						#user-name{
+							font-size: 12.04px;
+							font-weight: 700;
+							margin:3px 15px 0px auto;
+							text-align: right;
+							transform: scaleX(1.0154);
+						}
+						#balance{
+							background-image:url("../img/Rounded.png");
+							height:31px;
+							margin:1px auto auto auto;
+							width:166px;
+							.balance-number{
+								color: #051c2b;
+								font-size: 21.67px;
+								font-weight: 900;
+								line-height:31px;
+								margin-right:5px; 
+								text-align: right;
+								transform: scaleX(1.0154);
+								margin-top:-3px;
+							}
+						}
+					}	
+					.score-btn-wrapper{
+						background-image:url("../img/outer-frame.png");
+						display:inline-block;
+						height:51px;
+						margin-right:10px;
+						vertical-align: middle;
+						width:132px;
+
+						#history-btn{
+							background-image:url("../img/blue-btn-off.png");
+							border-radius:7px;
+							height:41px;
+							margin-top:6px;
+							width:122px;
+
+							p{
+								font-size: 14.44px;
+								font-weight: 900;
+								line-height: 13.904px;
+								transform: scaleX(1.0097); 
+								margin-bottom:2px;
+							}
+						}
+						#history-btn:hover{
+							background-image:url("../img/blue-btn-hover.png");
+						}
+						#history-btn:active{
+							background-image:url("../img/blue-btn-on.png");
+						}
+					}
+				}	
+				.footer-right{
+					float:right;
+					width:440px;
+					height:98px;
+
+					height:62px;
+					margin-top:27px;
+					.btn-wrapper{
+						background-image:url("../img/outer-frame.png");
+						display:inline-block;
+						height:51px;
+						margin-right:10px;
+						// margin-top:32px;
+						width:132px;
+
+						.footer-right-btn{
+							width:122px;
+							height:41px;
+							border-radius:7px;
+							margin-top:6px;
+							p{
+								font-size: 15px;
+								font-weight: 900;
+								margin-top:6px;
+							}
+						}
+						#login-menu-btn{
+							background-image:url("../img/blue-btn-off.png");
+						}
+						#login-menu-btn:hover{
+							background-image:url("../img/blue-btn-hover.png");
+						}
+						#login-menu-btn:active{
+							background-image:url("../img/blue-btn-on.png");
+						}
+						#license-btn, #offer-btn{
+							background-image:url("../img/orange-btn-off.png");	
+						}
+						#license-btn:hover, #offer-btn:hover{
+							background-image:url("../img/orange-btn-hover.png");	
+						}
+						#license-btn:active, #offer-btn:active{
+							background-image:url("../img/orange-btn-on.png");	
+						}
+					}
+				}
+			}
+		}
+	}

@@ -1,0 +1,70 @@
+// #bingotron-top --------------------------------------------------------------
+	#bingotron-header{
+		display:block;
+		div,ul,li,img,p,h1,span{
+			// border:1px dashed red;
+		}
+		background-color:rgba(0,0,0,.5);
+		.container{
+			.wrapper{
+				height:75px;
+				.header-title-wrapper{
+					height:30px;
+					line-height: 30px;
+					#header-title{
+						display:block;
+						color: rgba(48, 189, 255, 0.5);
+						font-size: 22.5px;
+						font-weight: 900;
+						letter-spacing: 1.125px;
+						text-align: center;
+						transform: scaleX(1.006); 
+						text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.4);
+						vertical-align: middle;
+						.title-star{
+							vertical-align: middle;
+							margin-top:-5px;
+							.fa-star{
+								color: rgba(48, 189, 255, 0.5);
+								text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.4);	
+							}	
+						}
+						.title-star:nth-child(2),.title-star:nth-child(3){
+							font-size:12px;
+						}
+						.title-star:first-child, .title-star:last-child{
+							font-size:8px;
+						}
+					}
+				}
+				ul{
+					display:table;
+					width:1000px;	
+					margin-left:0;
+					height:30px;
+					.bingo-money{
+						background-size:264px;
+						display:table-cell;
+						height:25px;
+						padding-left:130px;
+						padding-top:14px;
+						min-width:33%;
+						p{
+							font-size: 12.5px;
+							font-weight: 700;
+							letter-spacing: 2.5px;
+						}
+					}
+				}
+				#money-gold{
+					background-image: url("../img/gold.png");
+				}
+				#money-silver{
+					background-image: url("../img/silver.png");
+				}
+				#money-bronze{
+					background-image: url("../img/bronze.png");
+				}
+			}
+		}
+	}

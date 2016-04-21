@@ -1,0 +1,188 @@
+// #history-pop-up--------------------------------------------------------------
+	#history-pop-up{
+		*,input,div,img,td,th,td{
+			// border:1px dashed red;
+		}	
+		background-color:#313131;
+		display:none;
+		height:100%;
+		left:0;
+		opacity:.95;
+		overflow:auto;
+		position:fixed;
+		top:0;
+		width:100%;
+		z-index:9999;
+		padding-top:38px;
+
+		#history-pop-up-wrapper {
+			background: -moz-linear-gradient(90deg, #02273b 0%, #044c72 55%, #056495 82%, #05699d 100%);
+			background: -ms-linear-gradient(90deg, #02273b 0%, #044c72 55%, #056495 82%, #05699d 100%);
+			background: -o-linear-gradient(90deg, #02273b 0%, #044c72 55%, #056495 82%, #05699d 100%);
+			background: -webkit-linear-gradient(90deg, #02273b 0%, #044c72 55%, #056495 82%, #05699d 100%);
+			background: linear-gradient(0deg, #02273b 0%, #044c72 55%, #056495 82%, #05699d 100%);
+			border-radius: 26px;
+			border:1px solid #0783c5;
+			box-sizing: border-box;
+			height:511px;
+			margin:38px auto;
+			padding:53px 21px;
+			position:relative;
+			width:632px;
+			z-index:9999;
+
+			.close {
+				background-image:url("../img/close.png");
+				border:1px solid rgba(0,0,0,0);
+				cursor:pointer;
+				height:21px;
+				position:absolute;
+				right:20px;
+				top:20px;
+				width:21px;
+			}
+
+			.close:hover{
+				background-image:url("../img/hover-close.png");	
+			}
+
+			h1{
+				color: #ff8c10;
+				font-size: 33.75px;
+				font-weight: 900;
+				letter-spacing: 1.688px;
+				margin-bottom:39px;
+				text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+				transform: scaleX(1.006);
+			}
+
+			.history-pop-up-table{
+				width:592px;
+				margin-bottom:44px;
+				.table-header-row{
+					box-shadow: inset 0px 0px 3px 3px rgba(255,255,255,0.4);
+					border-radius:10px 10px 0px 0px;
+					 background-color:  #002a41;
+					font-size:0;
+					.table-header-column{
+						color:  #f1840f;
+						font-size: 15px;
+						font-weight: 700;
+						line-height: 34px;
+					    display:inline-block;
+					}
+					.table-header-column_ticket{
+						border-radius:10px 0px 0px 0px;
+						width:129px
+					}
+					.table-header-column_win{
+						width:98px;
+					}
+					.table-header-column_game{
+						width:228px;
+					}
+					.table-header-column_sale{
+						border-radius:0px 10px 0px 0px;
+						width:137px;
+					}
+				}
+
+				.table-data-page{
+					display:none;
+					.table-data-row{
+						height:64px;
+						border-bottom:2px solid rgba(0,0,0,.1);
+						display:table;
+						.table-data-column{
+							vertical-align: middle;
+							border-right:1px solid rgba(255,255,255,0.2);
+							display:table-cell;
+							padding:10px;
+							p{
+								font-size: 15px;
+								font-weight: 400;
+								display:inline-block;
+								margin-bottom:0;
+							}
+
+							span{
+								display:inline-block;
+								img{
+									width:84px;
+								}
+							}
+						}
+						.table-data-column_ticket{
+							width:129px;
+							border-left:1px solid rgba(255,255,255,0.2);
+							p{
+								font-weight:700;
+							}
+						}
+						.table-data-column_win{
+							width:98px;
+						}
+						.table-data-column_game{
+							padding-left:10px;
+							text-align:left;
+
+							width:228px;
+						}
+						.table-data-column_sale{
+							width:137px;
+
+						}
+					}
+				}
+			}
+
+			.pagination{
+				background:rgba(0,0,0,0);
+				bottom:20px;
+				display:block;
+				left:109px;
+				position:absolute;
+
+				li{
+					background-color:rgba(0,0,0,0);
+					height:36px;
+
+					a{
+						background:rgba(0,0,0,0);
+						border:1px solid rgba(0,0,0,0);
+						color: #2eb2f2;
+						font-size: 15px;
+						font-weight: 700;
+						height:36px;
+						letter-spacing: 0.75px;
+						line-height: 17.626px;
+						width:36px;
+
+					}
+
+					a:hover{
+						background-color:rgba(0,0,0,0.5);
+						background-image:url("../img/table-pagination-btn.png");
+						background-repeat: no-repeat;
+						background-size:cover;
+						color: #d47a16;
+						font-weight:900;
+						text-decoration:underline;
+					}
+				}
+				li:first-child, li:last-child{
+					a{
+						width:120px;
+						height:36px;
+					}
+				}
+				li:first-child:hover, li:last-child:hover{
+					a:hover{
+						background-image:none;
+						color: #2eb2f2;
+						background-color:rgba(0,0,0,0);
+					}
+				}				
+			}
+		}
+	}

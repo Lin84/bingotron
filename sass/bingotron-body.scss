@@ -1,0 +1,123 @@
+// #bingotron-body--------------------------------------------------------------
+	#bingotron-body{
+		div,ul,li,img,p{
+			// border:1px dashed red;
+		}
+		margin:0 auto;
+		.container{
+			 .wrapper{
+				position:relative;
+				.carousel {
+					height:500px;
+					left: 50%;
+					margin-left: -500px;
+					overflow: hidden;
+					padding-left:75px;
+					padding-top:70px;
+					position: absolute;
+					width: 1000px;
+
+					.item {
+						background-repeat:no-repeat;
+						background-size: 100%;
+						cursor: pointer;
+						height:131px;
+						line-height: 150px;
+						vertical-align: middle;
+						width:199px;
+					}
+					.item:nth-child(1){
+						background-image:url("../img/Group-6.png");
+					}
+					.item:nth-child(2){
+						background-image:url("../img/Group-5.png");
+					}
+					.item:nth-child(3){
+						background-image:url("../img/Group-4.png");
+					}
+					.item:nth-child(4){
+						background-image:url("../img/Group-3.png");
+					}
+					.item:nth-child(5){
+						background-image:url("../img/Group-2.png");
+					}
+					.item:nth-child(6){
+						background-image:url("../img/Group-1.png");
+					}
+					.item:nth-child(7){
+						background-image:url("../img/Group-12.png");
+					}
+					.item:nth-child(8){
+						background-image:url("../img/Group-11.png");
+					}
+					.item:nth-child(9){
+						background-image:url("../img/Group-10.png");
+					}
+					.item:nth-child(10){
+						background-image:url("../img/Group-9.png");
+					}
+					.item:nth-child(11){
+						background-image:url("../img/Group-8.png");
+					}
+				}
+				.controls {
+					background-image:url("../img/oval.png");
+					display:table;
+					height:131px;
+					left: 50%;
+					margin-left: -75px;
+					margin-left:-100px;
+					position: absolute;
+					top:345px;
+					width:200px;
+					z-index:99;
+
+					.previous {
+						display:table-cell;
+						width:26%;
+						cursor:pointer;
+						background-image:url("../img/ZZarrow_left.png");
+						background-size:17px;
+						background-position:33px center;
+						z-index:9999;
+					}
+					.previous:hover{
+						background-image:url("../img/ZZarrow_left_noglow.png");
+					}
+					.previous:active{
+						background-position:31px center;
+					}
+					.start-btn-wrapper{
+						display:table-cell;
+						width:45%;
+						background-position:-6px 20px;
+						background-size:102px;
+						z-index:9;
+						#start-btn{
+							margin-top:17px;
+							margin-right:-2px;
+							background-image:url("../img/start-off.png");
+							width:92px;
+							height:92px;
+							border-radius:56px;
+						}
+					}
+					.next {
+						display:table-cell;
+						width:26%;
+						cursor:pointer;
+						background-image:url("../img/ZZarrow_right.png");
+						background-size:17px;
+						background-position:5px center;
+						z-index:9999;
+					}
+					.next:hover{
+						background-image:url("../img/ZZarrow_right_noglow.png");
+					}
+					.next:active{
+						background-position:7px center;
+					}
+				}
+			}
+		}
+	}

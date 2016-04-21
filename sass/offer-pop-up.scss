@@ -1,0 +1,89 @@
+// #offer-pop-up----------------------------------------------------------------
+	#offer-pop-up{
+		*,input,div,img{
+			// border:1px dashed red;
+		}	
+		background-color:#313131;
+		display:none;
+		height:100%;
+		left:0;
+		opacity:.95;
+		overflow:auto;
+		position:fixed;
+		top:0;
+		width:100%;
+		z-index:9999;
+		padding-top:48px;
+		
+		
+
+
+		#offer-pop-up-wrapper {
+			background: -moz-linear-gradient(90deg, #02273b 0%, #044c72 55%, #056495 82%, #05699d 100%);
+			background: -ms-linear-gradient(90deg, #02273b 0%, #044c72 55%, #056495 82%, #05699d 100%);
+			background: -o-linear-gradient(90deg, #02273b 0%, #044c72 55%, #056495 82%, #05699d 100%);
+			background: -webkit-linear-gradient(90deg, #02273b 0%, #044c72 55%, #056495 82%, #05699d 100%);
+			background: linear-gradient(0deg, #02273b 0%, #044c72 55%, #056495 82%, #05699d 100%);
+			border-radius: 26px;
+			border:1px solid #0783c5;
+			box-sizing: border-box;
+			height:500px;
+			margin:38px auto;
+			padding:53px 23px 53px 59px;
+			position:relative;
+			width:632px;
+			z-index:9999;
+			
+			.close {
+				background-image:url("../img/close.png");
+				border:1px solid rgba(0,0,0,0);
+				cursor:pointer;
+				height:21px;
+				position:absolute;
+				right:20px;
+				top:20px;
+				width:21px;
+			}
+
+			.close:hover{
+				background-image:url("../img/hover-close.png");	
+			}
+
+			h1{
+				color: #ff8c10;
+				font-size: 35px;
+				font-weight: 900;
+				letter-spacing: 1.688px;
+				transform: scaleX(1.006); 
+				text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+				margin-bottom:30px;
+			}
+
+			.offer-pop-up-main-content{
+				height:320px;
+				overflow-y: scroll;
+				padding-right:10px;
+
+				h2{
+					font-size: 25px;
+					font-weight: 700;
+					text-align: left;
+					margin-bottom:29px;
+					line-height: 30px;
+				}
+
+				p{
+					font-size: 15px;
+					font-weight: 500;
+					text-align: left;
+					text-indent: -33.333px;
+					margin-bottom:29px;
+					margin-left:32px;
+				}
+
+				p:last-child{
+					margin-bottom:0;				
+				}
+			}
+		}
+	}
